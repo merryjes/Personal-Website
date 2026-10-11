@@ -68,39 +68,6 @@ document.querySelectorAll('.card').forEach(card => {
 
 
 
-window.addEventListener('mousemove', (e) => {
-    if (Math.random() > 0.85) {
-        const particle = document.createElement('div');
-        particle.innerHTML = '✨';
-        particle.style.position = 'fixed';
-        particle.style.left = `${e.clientX}px`;
-        particle.style.top = `${e.clientY}px`;
-        particle.style.pointerEvents = 'none';
-        particle.style.fontSize = `${Math.random() * 10 + 10}px`;
-        particle.style.transition = 'all 0.8s ease-out';
-        particle.style.zIndex = '9999';
-        
-        document.body.appendChild(particle);
-
-        
-        setTimeout(() => {
-            particle.style.transform = `translate(${(Math.random() - 0.5) * 60}px, -50px) scale(1.5)`;
-            particle.style.opacity = '0';
-        }, 20);
-
-        setTimeout(() => {
-            particle.remove();
-        }, 800);
-    }
-});
-
-
-
-
-console.log(
-    "%c✨ Welcome to Merry Jes's Portfolio! ✨", 
-    "color: #2563eb; font-size: 16px; font-weight: bold; background: #f1f5f9; padding: 6px 12px; border-radius: 8px;"
-);
 
 
 
@@ -173,11 +140,44 @@ magneticElements.forEach(el => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transition = 'none';
+        });
+    });
+});
 
 
 
 
 
+// ==========================================
+// DRAMATIC WELCOME TEXT & SCREEN CONTROLLER
+// ==========================================
+window.addEventListener('load', () => {
+    const welcomeScreen = document.getElementById('welcome-screen');
+    const welcomeContent = document.querySelector('.welcome-content');
+    
+    if (!welcomeScreen || !welcomeContent) return;
 
+    // Step 1: Text dramatically fades & floats in (starts after 300ms)
+    setTimeout(() => {
+        welcomeContent.classList.add('text-in');
+    }, 300);
+
+    // Step 2: Text dramatically fades out & blurs away (after 2.8s)
+    setTimeout(() => {
+        welcomeContent.classList.remove('text-in');
+        welcomeContent.classList.add('text-out');
+    }, 2800);
+
+    // Step 3: Background slowly dissolves to reveal main profile (after 4.2s)
+    setTimeout(() => {
+        welcomeScreen.classList.add('fade-out-bg');
+    }, 4200);
+});
 
 

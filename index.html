@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merry Jes Saldua - Portfolio</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <
-    <nav class="navbar">        <div class="logo">MJ</div>
+    <!-- ================================================================= -->
+    <!-- AESTHETIC WELCOME SPLASH SCREEN (Fades slowly in and out)         -->
+    <!-- ================================================================= -->
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <h1 class="welcome-title">Welcome to My Portfolio</h1>
+            <p class="welcome-subtitle">Designed & Built by Merry Jes</p>
+        </div>
+    </div>
 
+
+    <!-- ================================================================= -->
+    <!-- SOPHISTICATED NAVIGATION BAR                                      -->
+    <!-- ================================================================= -->
+    <nav class="navbar">
+        <div class="logo">MJ.</div>
         <div class="nav-links">
             <a href="#home">Home</a>
-            <a href="#about">About Me</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </div>
@@ -110,31 +123,49 @@
     </section>
 
 
-    <section id="experience" class="section">
-        <h2>Work Experience</h2>
-
-        <div class="cards-grid">
-            <!-- Experience 1 -->
-            <div class="card">
-                <h3>South City Central School</h3>
-                <h4>Immersion Student Teacher (Elementary)</h4>
-                <p class="date">2024 - 2025</p>
-                <ul>
-                    <li>Assisted teachers in preparing lessons and guiding students.</li>
-                    <li>Developed patience, responsibility, and communication skills.</li>
-                    <li>Applied these skills in explaining concepts and collaborating on projects.</li>
-                </ul>
+    <!-- ================================================================= -->
+    <!-- CLEAN ORBITAL TECH STACK RINGS                                    -->
+    <!-- ================================================================= -->
+    <section class="section">
+        <h2>Tech Stack & Skills</h2>
+        <div class="skills-orbit-container">
+            <!-- Ring 1: Moving Left -->
+            <div class="orbit-track track-left">
+                <div class="orbit-item">Java</div>
+                <div class="orbit-item">Python</div>
+                <div class="orbit-item">C</div>
+                <div class="orbit-item">CSS</div>
+                <div class="orbit-item">JavaScript</div>
+                <div class="orbit-item">Git & GitHub</div>
+                <div class="orbit-item">OOP Principles</div>
+                <!-- Duplicate for seamless looping -->
+                <div class="orbit-item">Java</div>
+                <div class="orbit-item">Python</div>
+                <div class="orbit-item">C</div>
+                <div class="orbit-item">HTML</div>
+                <div class="orbit-item">CSS</div>
+                <div class="orbit-item">JavaScript</div>
+                <div class="orbit-item">Git & GitHub</div>
+                <div class="orbit-item">OOP Principles</div>
             </div>
 
-            <div class="card">
-                <h3>Cagayan de Oro National High School</h3>
-                <h4>Work Immersion (Junior High)</h4>
-                <p class="date">2024 - 2025</p>
-                <ul>
-                    <li>Supported classroom activities and observed teaching strategies.</li>
-                    <li>Gained adaptability and problem-solving skills.</li>
-                    <li>Applied dedication in learning C, Python, Java, HTML, CSS, and JavaScript.</li>
-                </ul>
+            <!-- Ring 2: Moving Right -->
+            <div class="orbit-track track-right">
+                <div class="orbit-item">SQL</div>
+                <div class="orbit-item">Database</div>
+                <div class="orbit-item">Figma</div>
+                <div class="orbit-item">Data Structures</div>
+                <div class="orbit-item">Algorithms</div>
+                <div class="orbit-item">Git</div>
+                <div class="orbit-item">VS Code</div>
+                <!-- Duplicate for seamless looping -->
+                <div class="orbit-item">SQL</div>
+                <div class="orbit-item">Database</div>
+                <div class="orbit-item">Figma</div>
+                <div class="orbit-item">Data Structures</div>
+                <div class="orbit-item">Algorithms</div>
+                <div class="orbit-item">Git</div>
+                <div class="orbit-item">VS Code</div>
             </div>
         </div>
     </section>
@@ -190,17 +221,15 @@
             
             <div class="social-links-container">
                 
-              
-                <a href="mailto:your.email@gmail.com" class="social-link gmail" target="_blank">
+                <a href="mailto:saldua.merryjessaldua@gmail.com" class="social-link gmail" target="_blank">
                     <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                     <span>saldua.merryjessaldua@gmail.com</span>
                 </a>
 
                 <a href="https://www.facebook.com/mjxezz" class="social-link facebook" target="_blank">
                     <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    <span>Merry Jes Saldua </span>
+                    <span>Merry Jes Saldua</span>
                 </a>
-
 
                 <a href="https://www.instagram.com/m.jxez?exln=Y2xxdHY1djVuOWRq" class="social-link instagram" target="_blank">
                     <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
