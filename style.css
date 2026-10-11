@@ -314,9 +314,7 @@ h1, h2, h3, h4, .logo, .welcome-title {
     fill: currentColor;
 }
 
-/* ========================================== */
-/* CLEAN ORBITAL SKILLS TRACKS                */
-/* ========================================== */
+/* CLEAN ORBITAL SKILLS TRACKS */
 .skills-orbit-container {
     width: 100%;
     overflow: hidden;
@@ -379,9 +377,7 @@ h1, h2, h3, h4, .logo, .welcome-title {
     100% { transform: translateX(0); }
 }
 
-/* ========================================== */
-/* DRAMATIC AESTHETIC WELCOME SPLASH SCREEN   */
-/* ========================================== */
+/* DRAMATIC AESTHETIC WELCOME SPLASH SCREEN */
 #welcome-screen {
     position: fixed;
     top: 0;

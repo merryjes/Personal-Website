@@ -154,9 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// ==========================================
 // DRAMATIC WELCOME TEXT & SCREEN CONTROLLER
-// ==========================================
 window.addEventListener('load', () => {
     const welcomeScreen = document.getElementById('welcome-screen');
     const welcomeContent = document.querySelector('.welcome-content');
